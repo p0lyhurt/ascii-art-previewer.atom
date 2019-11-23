@@ -1,0 +1,21 @@
+{
+  "name": "ascii-art-previewer",
+  "main": "./lib/ascii-art-previewer",
+  "version": "0.1.0",
+  "description": "Previews ASCII art using MIRC colors.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "ascii-art-previewer:toggle"
+  },
+  "deserializers": {
+    "ascii-art-previewer/AsciiArtPreviewerView": "deserializeAsciiArtPreviewerView"
+  },
+  "repository": "https://github.com/p0lyhurt/ascii-art-previewer",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle ASCII Art Previewer",
+        "command": "ascii-art-previewer:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "ASCII Art Previewer",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "ascii-art-previewer:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
