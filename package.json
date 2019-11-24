@@ -1,7 +1,7 @@
 {
   "name": "ascii-art-previewer",
   "main": "./lib/ascii-art-previewer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Previews ASCII art using MIRC colors.",
   "keywords": [
   ],
