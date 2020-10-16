@@ -1,7 +1,7 @@
 {
   "name": "ascii-art-previewer",
   "main": "./lib/ascii-art-previewer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Previews ASCII art using MIRC colors.",
   "keywords": [
   ],
@@ -17,5 +17,34 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+  },
+  "configSchema": {
+    "converterDefaults": {
+      "title": "ASCII Art Image Converter Defaults",
+      "type": "object",
+      "properties": {
+        "defaultScale": {
+          "title": "Default Scale",
+          "description": "Default scale factor used when generating an image (pixels per \"blown-up\" pixel).",
+          "type": "integer",
+          "default": 8
+        },
+        "defaultCharacterMode": {
+          "title": "Default Character Mode",
+          "type": "string",
+          "default": "full",
+          "enum": [
+            {"value": "full", "description": "Full: Font sizes are twice the scale factor (two \"blown-up\" pixels tall)."},
+            {"value": "minus-half", "description": "Minus-half: Characters take up less room within each \"blown-up\" pixel."}
+          ]
+        },
+        "defaultBackgroundColor": {
+          "title": "Default Background Color",
+          "description": "Characters missing from the end of lines are filled in with this color.",
+          "type": "color",
+          "default": "black"
+        }
+      }
+    }
   }
 }

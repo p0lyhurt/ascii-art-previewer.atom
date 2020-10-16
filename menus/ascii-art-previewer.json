@@ -4,6 +4,16 @@
       {
         "label": "Toggle ASCII Art Previewer",
         "command": "ascii-art-previewer:toggle"
+      },
+      {
+        "label": "Convert ASCII Art to PNG",
+        "command": "ascii-art-previewer:open-convert-modal"
+      }
+    ],
+    ".ascii-art-previewer": [
+      {
+        "label": "Convert to PNG",
+        "command": "ascii-art-previewer:open-convert-modal"
       }
     ]
   },
@@ -17,6 +27,10 @@
             {
               "label": "Toggle",
               "command": "ascii-art-previewer:toggle"
+            },
+            {
+              "label": "Convert Active Pane to PNG",
+              "command": "ascii-art-previewer:open-convert-modal"
             }
           ]
         }

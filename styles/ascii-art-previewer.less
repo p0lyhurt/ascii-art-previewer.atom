@@ -4,6 +4,23 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
+@font-face {
+  font-family: "AsciiArtConverterFace";
+  src: url("atom://ascii-art-previewer/resources/fonts/Web_IBM_BIOS-2y.woff") format("woff"),
+       url("atom://ascii-art-previewer/resources/fonts/MxPlus_IBM_BIOS-2y.ttf") format("ttf");
+}
+
+ascii-art-converter-font-fixer {
+  font-family: "AsciiArtConverterFace";
+  font-size: 1px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .ascii-art-previewer {
   overflow-y: scroll;
 
@@ -11,6 +28,10 @@
     font-family: Menlo, Consolas, DejaVu Sans Mono, monospace;
     font-size: 11pt;
     line-height: normal;
+
+    span {
+      white-space: pre;
+    }
   }
 
   .preview-error {
