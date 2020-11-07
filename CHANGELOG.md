@@ -1,3 +1,6 @@
+## 0.2.1
+* suggest default name for PNG conversions in save dialog
+
 ## 0.2.0
 * added previewer context-menu action to convert current preview into PNG
 * fixed various previewer bugs
