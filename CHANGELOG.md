@@ -1,3 +1,6 @@
+## 0.2.2
+* fixed PNG conversion dialog for newer electron
+
 ## 0.2.1
 * suggest default name for PNG conversions in save dialog
 
